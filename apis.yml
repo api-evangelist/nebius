@@ -1,0 +1,192 @@
+aid: nebius
+name: Nebius
+description: Nebius is an AI-focused cloud platform spun out of Yandex, offering NVIDIA GPU virtual machines
+  and clusters (GB300, GB200, B300, B200, H200, H100) connected over InfiniBand, managed Kubernetes and Slurm
+  (Soperator), S3-compatible storage, managed PostgreSQL, container registry, MLflow, JupyterLab, vLLM, and
+  the Token Factory inference platform. Nebius exposes a gRPC control plane API, a Terraform provider, a
+  nebius CLI, and Go and TypeScript SDKs.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/nebius/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+type: Index
+access: 3rd-Party
+position: Producer
+tags:
+- AI
+- Cloud
+- Compute
+- GPU
+- HPC
+- Inference
+- Kubernetes
+- Machine Learning
+- Storage
+apis:
+- aid: nebius:compute-api
+  name: Nebius Compute API
+  description: The Nebius Compute API provisions and manages virtual machines and GPU clusters with NVIDIA
+    GPUs and InfiniBand interconnect for ML and AI workloads. Exposed over gRPC and accessed through the
+    nebius CLI, Terraform provider, and language SDKs.
+  humanURL: https://docs.nebius.com/compute
+  tags:
+  - Compute
+  - GPU
+  - InfiniBand
+  - Virtual Machines
+  properties:
+  - type: Documentation
+    url: https://docs.nebius.com/compute
+- aid: nebius:kubernetes-api
+  name: Nebius Managed Kubernetes API
+  description: The Managed Kubernetes API provisions Kubernetes clusters with GPU and InfiniBand support
+    for distributed training and inference workloads.
+  humanURL: https://docs.nebius.com/kubernetes
+  tags:
+  - Clusters
+  - Containers
+  - GPU
+  - Kubernetes
+  properties:
+  - type: Documentation
+    url: https://docs.nebius.com/kubernetes
+- aid: nebius:storage-api
+  name: Nebius Storage API
+  description: The Nebius Storage API exposes AWS S3-compatible object storage for ML/AI datasets and model
+    artifacts.
+  humanURL: https://docs.nebius.com/storage
+  tags:
+  - Datasets
+  - Object Storage
+  - S3
+  - Storage
+  properties:
+  - type: Documentation
+    url: https://docs.nebius.com/storage
+- aid: nebius:iam-api
+  name: Nebius IAM API
+  description: The Nebius Identity and Access Management API controls users, service accounts, projects,
+    and resource-level access policies.
+  humanURL: https://docs.nebius.com/iam
+  tags:
+  - Access Control
+  - IAM
+  - Identity
+  - Service Accounts
+  properties:
+  - type: Documentation
+    url: https://docs.nebius.com/iam
+- aid: nebius:mk8s-applications-api
+  name: Nebius Managed Applications API
+  description: The Managed Applications API deploys and manages JupyterLab, vLLM, Open WebUI, MLflow, and
+    other ready-made apps on Nebius infrastructure.
+  humanURL: https://docs.nebius.com/applications
+  tags:
+  - Applications
+  - JupyterLab
+  - MLflow
+  - vLLM
+  properties:
+  - type: Documentation
+    url: https://docs.nebius.com/applications
+- aid: nebius:token-factory
+  name: Nebius Token Factory
+  description: Nebius Token Factory is the AI model inference platform offering OpenAI-compatible endpoints
+    for serving open-source LLMs on Nebius GPU infrastructure.
+  humanURL: https://docs.tokenfactory.nebius.com/quickstart
+  tags:
+  - AI
+  - Inference
+  - LLMs
+  - OpenAI Compatible
+  - Serverless
+  properties:
+  - type: Documentation
+    url: https://docs.tokenfactory.nebius.com/quickstart
+  - type: Portal
+    url: https://tokenfactory.nebius.com
+common:
+- type: Website
+  url: https://nebius.com
+- type: Developer
+  url: https://docs.nebius.com
+- type: Documentation
+  url: https://docs.nebius.com
+- type: Portal
+  url: https://console.nebius.com
+- type: Pricing
+  url: https://nebius.com/prices
+- type: Blog
+  url: https://nebius.com/blog
+- type: GitHubOrganization
+  url: https://github.com/nebius
+- type: TermsOfService
+  url: https://nebius.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://nebius.com/legal/privacy-policy
+- type: Support
+  url: https://nebius.com/contact
+- type: LinkedIn
+  url: https://www.linkedin.com/company/nebius
+- name: Nebius Go SDK
+  url: https://github.com/nebius/gosdk
+  type: SDK
+- name: Nebius JavaScript SDK
+  url: https://github.com/nebius/js-sdk
+  type: SDK
+- name: Nebius Terraform Provider
+  url: https://github.com/nebius/terraform-provider-nebius
+  type: Terraform
+- name: Nebius Solution Library
+  url: https://github.com/nebius/nebius-solution-library
+  type: Samples
+- name: Soperator
+  url: https://github.com/nebius/soperator
+  type: Samples
+- type: Features
+  data:
+  - name: GPU Compute
+    description: Virtual machines and clusters with NVIDIA GB300, GB200, B300, B200, H200, and H100 GPUs.
+  - name: InfiniBand Networking
+    description: High-bandwidth InfiniBand interconnect for large-scale distributed training.
+  - name: Managed Kubernetes
+    description: Kubernetes clusters with GPU and InfiniBand support.
+  - name: Slurm via Soperator
+    description: Slurm workload manager running on Kubernetes via the open-source Soperator project.
+  - name: S3-Compatible Storage
+    description: Object storage optimized for ML datasets and model artifacts.
+  - name: Managed Applications
+    description: One-click JupyterLab, vLLM, Open WebUI, and MLflow deployments.
+  - name: Token Factory
+    description: OpenAI-compatible inference endpoints for open-source LLMs.
+- type: GPUs
+  data:
+  - name: NVIDIA GB300
+    description: Grace Blackwell Ultra superchip.
+  - name: NVIDIA GB200
+    description: Grace Blackwell superchip.
+  - name: NVIDIA B300
+    description: Blackwell Ultra GPU.
+  - name: NVIDIA B200
+    description: Blackwell GPU.
+  - name: NVIDIA H200
+    description: 141GB HBM3e Hopper GPU.
+  - name: NVIDIA H100
+    description: 80GB Hopper GPU.
+- type: Integrations
+  data:
+  - name: Terraform
+    description: Official Terraform provider for Nebius infrastructure.
+  - name: Kubernetes
+    description: Standard Kubernetes API across managed clusters.
+  - name: Slurm
+    description: Slurm workload manager via the open-source Soperator project.
+  - name: MLflow
+    description: Managed MLflow for experiment tracking.
+  - name: PostgreSQL
+    description: Managed PostgreSQL database clusters.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+  url: https://apievangelist.com
