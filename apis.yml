@@ -186,6 +186,8 @@ common:
     description: Managed MLflow for experiment tracking.
   - name: PostgreSQL
     description: Managed PostgreSQL database clusters.
+- type: LLMsTxt
+  url: https://docs.nebius.com/llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
