@@ -2,6 +2,13 @@
   "repo": "nebius",
   "feeds": [
     {
+      "source": "https://nebius.com/blog",
+      "feed_url": "https://nebius.com/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://nebius.com/prices",
       "feed_url": "https://nebius.com/prices",
       "title": "",
@@ -9,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-01T23:35:02Z"
+  "post_count": 3,
+  "fetched": "2026-06-14T20:42:17Z"
 }
