@@ -131,10 +131,10 @@ common:
   url: https://www.linkedin.com/company/nebius
 - name: Nebius Go SDK
   url: https://github.com/nebius/gosdk
-  type: SDK
+  type: SDKs
 - name: Nebius JavaScript SDK
   url: https://github.com/nebius/js-sdk
-  type: SDK
+  type: SDKs
 - name: Nebius Terraform Provider
   url: https://github.com/nebius/terraform-provider-nebius
   type: Terraform
@@ -186,7 +186,7 @@ common:
     description: Managed MLflow for experiment tracking.
   - name: PostgreSQL
     description: Managed PostgreSQL database clusters.
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.nebius.com/llms.txt
 maintainers:
 - FN: Kin Lane

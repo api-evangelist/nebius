@@ -3,10 +3,9 @@
   "feeds": [
     {
       "source": "https://nebius.com/blog",
-      "feed_url": "https://nebius.com/blog",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "feed_url": "",
+      "saved": 3,
+      "method": "agent-scrape"
     },
     {
       "source": "https://nebius.com/prices",
@@ -16,6 +15,7 @@
       "method": "none"
     }
   ],
-  "post_count": 3,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 8,
+  "fetched": "2026-06-27T12:55:39Z",
+  "agent_pulled": "2026-06-27"
 }
