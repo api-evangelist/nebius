@@ -2,12 +2,6 @@
   "repo": "nebius",
   "feeds": [
     {
-      "source": "https://nebius.com/blog",
-      "feed_url": "",
-      "saved": 3,
-      "method": "agent-scrape"
-    },
-    {
       "source": "https://nebius.com/prices",
       "feed_url": "https://nebius.com/prices",
       "title": "",
@@ -16,6 +10,6 @@
     }
   ],
   "post_count": 8,
-  "fetched": "2026-06-27T12:55:39Z",
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z",
+  "agent_pulled": "2026-07-04"
 }
