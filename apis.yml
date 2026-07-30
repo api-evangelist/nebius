@@ -5,7 +5,19 @@ description: Nebius is an AI-focused cloud platform spun out of Yandex, offering
   (Soperator), S3-compatible storage, managed PostgreSQL, container registry, MLflow, JupyterLab, vLLM, and
   the Token Factory inference platform. Nebius exposes a gRPC control plane API, a Terraform provider, a
   nebius CLI, and Go and TypeScript SDKs.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nebius.png
 url: https://raw.githubusercontent.com/api-evangelist/nebius/refs/heads/main/apis.yml
 created: '2026-05-23'
 modified: '2026-05-23'
