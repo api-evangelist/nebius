@@ -193,10 +193,10 @@ common:
   type: Terraform
 - name: Nebius Solution Library
   url: https://github.com/nebius/nebius-solution-library
-  type: Samples
+  type: Examples
 - name: Soperator
   url: https://github.com/nebius/soperator
-  type: Samples
+  type: Examples
 - type: Features
   data:
   - name: GPU Compute
