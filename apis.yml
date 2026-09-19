@@ -109,6 +109,11 @@ apis:
   humanURL: https://docs.nebius.com/iam
   tags:
   - Access Control
+  - Identity and Access Management
+  - Identity
+  - Service Accounts
+  tags_raw:
+  - Access Control
   - IAM
   - Identity
   - Service Accounts
@@ -141,7 +146,7 @@ apis:
   tags:
   - Artificial Intelligence
   - Inference
-  - LLMs
+  - LLM
   - OpenAI-Compatible
   - Serverless
   tags_raw:
