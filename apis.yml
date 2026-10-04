@@ -44,7 +44,7 @@ tags:
 - HPC
 - Inference
 - Kubernetes
-- Machine-Learning
+- Machine Learning
 - Storage
 tags_raw:
 - AI
@@ -56,6 +56,7 @@ tags_raw:
 - Kubernetes
 - Machine Learning
 - Storage
+- Machine-Learning
 apis:
 - aid: nebius:compute-api
   name: Nebius Compute API
