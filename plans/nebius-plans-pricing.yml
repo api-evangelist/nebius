@@ -1,54 +1,209 @@
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
-provider: Nebius
-providerId: nebius
-created: '2026-05-22'
-modified: '2026-05-22'
-tags:
-- AI
-- Cloud
-- Compute
-- GPU
-- HPC
-- Inference
-- Kubernetes
-- Machine Learning
-- Storage
-description: Machine-readable plans scaffold for the Nebius API surface. Conforms to the API Commons Plans schema. Tier limits
-  and prices are scaffold defaults; replace with provider-published values.
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://nebius.com/prices
+sources:
+- https://nebius.com/prices
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: usage-other
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: 'Nebius AI Cloud infrastructure pricing: GPU/CPU hourly rates, spot rates, storage per GiB/month,
+  with commitment discounts (up to 35% less) and some ''Contact us'' items. All prices USD, excluding
+  taxes.'
+plan_count: 30
+currency: USD
 plans:
-- id: nebius-free
-  name: Free
-  type: freemium
-  description: Free entry tier for the Nebius API surface. Intended for evaluation, prototyping, and low-volume integrations.
-    Real limits and pricing must be reconciled with the provider's published plan documentation.
-  entries:
-  - label: API Requests
-    description: Monthly API request quota across all included endpoints
-    name: api_requests
-    type: quota
-    metric: requests
-    limit: 1000
-    timeFrame: month
-    geo: global
-    domains:
-    - https://docs.nebius.com/compute
-    unit: 1
-    price: '0.00'
-    userMultiplied: false
-  - label: Rate Limit
-    description: Maximum requests per minute on the free tier
-    name: rate_limit
-    type: rate
-    metric: requests_per_minute
-    limit: 10
-    timeFrame: minute
-    geo: global
-    domains:
-    - https://docs.nebius.com/compute
-    unit: 1
-    price: '0.00'
-references:
-- name: Nebius API Documentation
-  url: https://raw.githubusercontent.com/api-evangelist/nebius/refs/heads/main/apis.yml
+- name: NVIDIA GB300 NVL72
+  price_text: Contact us
+  period: none
+  unit: GPU-hour
+  included_quota: 112 vCPUs, 800 GB RAM
+- name: NVIDIA HGX B300
+  price_text: $7.85
+  price: 7.85
+  currency: USD
+  period: per-use
+  unit: GPU-hour (on-demand)
+  included_quota: 24 vCPUs, 346 GB RAM
+  overage: $9.50 GPU-hour effective October 1, 2026
+- name: NVIDIA GB200 NVL72
+  price_text: Contact us
+  period: none
+  unit: GPU-hour
+  included_quota: 112 vCPUs, 800 GB RAM
+- name: NVIDIA HGX B200
+  price_text: $7.15
+  price: 7.15
+  currency: USD
+  period: per-use
+  unit: GPU-hour (on-demand)
+  included_quota: 20 vCPUs, 224 GB RAM
+  overage: $8.50 effective October 1, 2026
+- name: NVIDIA HGX H200
+  price_text: $4.50
+  price: 4.5
+  currency: USD
+  period: per-use
+  unit: GPU-hour (on-demand)
+  included_quota: 16 vCPUs, 200 GB RAM
+  overage: $5.40 effective October 1, 2026
+- name: NVIDIA HGX H100
+  price_text: $3.85
+  price: 3.85
+  currency: USD
+  period: per-use
+  unit: GPU-hour (on-demand)
+  included_quota: 16 vCPUs, 200 GB RAM
+  overage: $4.50 effective October 1, 2026
+- name: NVIDIA RTX PRO 6000
+  price_text: $1.80
+  price: 1.8
+  currency: USD
+  period: per-use
+  unit: GPU-hour
+  included_quota: 24 vCPUs, 218 GB RAM
+- name: NVIDIA L40S with Intel CPU
+  price_text: from $1.55
+  price: 1.55
+  currency: USD
+  period: per-use
+  unit: GPU-hour
+  included_quota: 8-40 vCPUs, 32-160 GB RAM
+- name: NVIDIA L40S with AMD CPU
+  price_text: from $1.82
+  price: 1.82
+  currency: USD
+  period: per-use
+  unit: GPU-hour
+  included_quota: 16-192 vCPUs, 96-1152 GB RAM
+- name: Preemptible NVIDIA HGX B300 / B200
+  price_text: from $0.99
+  price: 0.99
+  currency: USD
+  period: per-use
+  unit: GPU-hour spot
+- name: Preemptible NVIDIA HGX H200 / H100 / RTX PRO 6000
+  price_text: from $0.79
+  price: 0.79
+  currency: USD
+  period: per-use
+  unit: GPU-hour spot
+- name: Preemptible NVIDIA L40S with Intel CPU
+  price_text: from $0.74**
+  price: 0.74
+  currency: USD
+  period: per-use
+  unit: GPU-hour
+- name: Preemptible NVIDIA L40S with AMD CPU
+  price_text: from $0.90**
+  price: 0.9
+  currency: USD
+  period: per-use
+  unit: GPU-hour
+- name: AMD EPYC Genoa (CPU-only)
+  price_text: from $0.10
+  price: 0.1
+  currency: USD
+  period: per-use
+  unit: hour
+  included_quota: 4-64 vCPUs, 16-256 GB RAM
+  overage: from $0.13 effective October 1, 2026
+- name: Intel Ice Lake (CPU-only)
+  price_text: from $0.05
+  price: 0.05
+  currency: USD
+  period: per-use
+  unit: hour
+  included_quota: 2-80 vCPUs, 8-320 GB RAM
+  overage: from $0.06 effective October 1, 2026
+- name: Shared Filesystem (by Nebius)
+  price_text: $0.0800
+  price: 0.08
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: WEKA filesystem
+  price_text: $0.1000
+  price: 0.1
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Object storage — Standard (volume)
+  price_text: $0.0147
+  price: 0.0147
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Object storage — Standard (egress traffic)
+  price_text: $0.0150
+  price: 0.015
+  currency: USD
+  period: per-use
+  unit: GiB
+- name: Object storage — Intelligent, Warm Tier (volume)
+  price_text: $0.030
+  price: 0.03
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Object storage — Intelligent, Cold Tier (volume)
+  price_text: $0.010
+  price: 0.01
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Object storage — Enhanced (volume)
+  price_text: $0.1100
+  price: 0.11
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Block volumes without data replication
+  price_text: $0.0530
+  price: 0.053
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Block volumes with erasure coding
+  price_text: $0.0710
+  price: 0.071
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Block volumes with 3x mirroring
+  price_text: $0.1180
+  price: 0.118
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Block volumes — local SSD disk
+  price_text: $0.065
+  price: 0.065
+  currency: USD
+  period: month
+  unit: GiB/month
+- name: Managed Service for Kubernetes
+  price_text: Free
+  period: none
+- name: Managed Soperator (Slurm on Kubernetes)
+  price_text: Free
+  period: none
+  included_quota: Free software, consumption-based pricing
+- name: 'Networking: Egress/Ingress traffic'
+  price_text: Free
+  period: none
+- name: 'Networking: Public IP address'
+  price_text: Free
+  period: none
+rate_limit_statements:
+- Current spot prices are displayed in the price calculator in the Nebius console and may vary during
+  the active use, including as frequently as every 15 minutes.
+- Yes, there is a minimum amount for the first payment, which is $25.
