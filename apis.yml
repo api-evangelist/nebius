@@ -162,6 +162,8 @@ apis:
   - type: Portal
     url: https://tokenfactory.nebius.com
 common:
+- type: Plans
+  url: plans/nebius-plans-pricing.yml
 - type: VulnerabilityDisclosure
   url: security/nebius-vulnerability-disclosure.yml
 - type: DomainSecurity
