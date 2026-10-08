@@ -162,6 +162,10 @@ apis:
   - type: Portal
     url: https://tokenfactory.nebius.com
 common:
+- type: RateLimits
+  url: rate-limits/nebius-rate-limits.yml
+- type: FinOps
+  url: finops/nebius-finops.yml
 - type: Plans
   url: plans/nebius-plans-pricing.yml
 - type: VulnerabilityDisclosure
