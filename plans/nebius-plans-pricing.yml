@@ -207,3 +207,250 @@ rate_limit_statements:
 - Current spot prices are displayed in the price calculator in the Nebius console and may vary during
   the active use, including as frequently as every 15 minutes.
 - Yes, there is a minimum amount for the first payment, which is $25.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - metered
+  - subscription
+  units:
+  - compute
+  - data
+  plans:
+  - name: NVIDIA GB300 NVL72
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - none
+  - name: NVIDIA HGX B300
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA GB200 NVL72
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - none
+  - name: NVIDIA HGX B200
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA HGX H200
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA HGX H100
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA RTX PRO 6000
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA L40S with Intel CPU
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: NVIDIA L40S with AMD CPU
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Preemptible NVIDIA HGX B300 / B200
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Preemptible NVIDIA HGX H200 / H100 / RTX PRO 6000
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Preemptible NVIDIA L40S with Intel CPU
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Preemptible NVIDIA L40S with AMD CPU
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: AMD EPYC Genoa (CPU-only)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Intel Ice Lake (CPU-only)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - compute
+    periods:
+    - other
+  - name: Shared Filesystem (by Nebius)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: WEKA filesystem
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Object storage — Standard (volume)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Object storage — Standard (egress traffic)
+    access: other
+    model: hybrid
+    model_how: derived
+    units:
+    - data
+    periods:
+    - other
+  - name: Object storage — Intelligent, Warm Tier (volume)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Object storage — Intelligent, Cold Tier (volume)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Object storage — Enhanced (volume)
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Block volumes without data replication
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Block volumes with erasure coding
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Block volumes with 3x mirroring
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Block volumes — local SSD disk
+    access: other
+    model: subscription
+    model_how: derived
+    units:
+    - other
+    periods:
+    - month
+  - name: Managed Service for Kubernetes
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Managed Soperator (Slurm on Kubernetes)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: 'Networking: Egress/Ingress traffic'
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: 'Networking: Public IP address'
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
