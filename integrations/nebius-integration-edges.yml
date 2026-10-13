@@ -89,7 +89,9 @@ edges:
   evidence: https://docs.nebius.com/object-storage/interfaces/s3-api-compatibility
   evidence_kind: own-docs
   evidence_file: https://github.com/api-evangelist/nebius/blob/main/evidence/compatibility/nebius-aws-s3-1.md
-  quote: Amazon S3 API compatibility
+  quote: 'Object Storage is compatible with the Amazon S3 API, so you can use your existing S3 tools, SDKs and workflows
+    without additional configuration. This reference outlines the boundaries of that compatibility. For bucket-level
+    operations such '
   supported_operations:
   - AbortMultipartUpload
   - CompleteMultipartUpload
