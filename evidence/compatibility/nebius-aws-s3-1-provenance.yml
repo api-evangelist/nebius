@@ -1,0 +1,12 @@
+fetched: '2026-10-13'
+method: fetched
+source: https://docs.nebius.com/object-storage/interfaces/s3-api-compatibility
+page: https://docs.nebius.com/object-storage/interfaces/s3-api-compatibility
+file: nebius-aws-s3-1.md
+bytes: 8308
+sha256: bd734984608c6a4307a0fc6f815cd794be67197477b939f0d56a4f787f97edec
+anchor: amazon-web-services
+shape: aws-s3
+classification: declares-compatibility
+quote: Amazon S3 API compatibility
+note: text extracted from the provider's own page (tags stripped), saved for evidence
