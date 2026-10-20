@@ -322,6 +322,40 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
   first_seen: '2026-10-20'
+- partner_name: PeeringDB (interconnection register)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.peeringdb.com/net/36279
+  category: network interconnection register
+  contract_reference:
+    register: PeeringDB (peeringdb.com/api net, ix, fac, org)
+    standard: null
+    spec_file: null
+    role: peeringdb-network
+    registered_name: NebiusCloud
+    register_id: https://www.peeringdb.com/net/36279
+    matched_domain: nebius.com
+    matched_by: domain
+    asns:
+    - 53428
+    - 210560
+    - 213291
+    - 401712
+    info_types:
+    - Content
+    ix_presence: 1
+    exchanges_operated: []
+    facilities_operated: 0
+    signal_note: 'participation only: PeeringDB is self-registered by network operators; ASNs, IX presence and facility
+      counts are context, never counted'
+    detected_by: sweep-network-edge.py
+    detected: '2026-10-20'
+  detected_by: sweep-network-edge.py
+  first_seen: '2026-10-20'
 generated: '2026-10-13'
 method: searched
 checked:
@@ -337,6 +371,10 @@ checked:
 - https://github.com/cncf/landscape
 - https://github.com/run-llama/llama_index/tree/main/llama-index-integrations
 - https://openrouter.ai/api/v1/models
+- https://manrs.org/netops/participants/
+- https://www.peeringdb.com/api/fac
+- https://www.peeringdb.com/api/ix
+- https://www.peeringdb.com/api/net
 source:
 - https://github.com/cncf/landscape
 - https://github.com/cncf/k8s-conformance
