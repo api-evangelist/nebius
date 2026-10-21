@@ -405,6 +405,69 @@ edges:
   category: infrastructure-as-code provider registry listing
   badges:
   - Verified publisher (GitHub domain-verified organization)
+- partner_name: Open Compute Project Foundation
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.opencompute.org/membership/membership-directory
+  category: open data center hardware standards membership
+  contract_reference:
+    register: Open Compute Project membership directory (opencompute.org/membership/membership-directory)
+    standard: Open Compute Project (OCP) specifications
+    spec_file: null
+    role: ocp-member
+    registered_name: Nebius AI
+    register_id: http://www.nebius.com
+    matched_domain: nebius.com
+    matched_by: domain
+    member_since: '2024'
+    signal_note: 'participation only: corporate membership of the Open Compute Project (level recorded as partner_tier);
+      membership is not product conformance (OCP Accepted / Inspired products are a separate marketplace, not read)'
+    detected_by: sweep-data-center-tier-certification.py
+    detected: '2026-10-21'
+  detected_by: sweep-data-center-tier-certification.py
+  first_seen: '2026-10-21'
+  partner_tier: Silver
+- partner_name: Open Compute Project marketplace
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.opencompute.org/marketplace/it-infrastructure/nebius-cloud-for-ai-in-life-sciences-and-healthcare/
+  category: data-center hardware recognition
+  contract_reference:
+    register: Open Compute Project marketplace (opencompute.org/products; /wp-json/wp/v2/marketplace + /companies)
+    standard: Open Compute Project
+    spec_file: null
+    role: ocp-recognised-product-vendor
+    registered_name: Nebius AI
+    register_id: https://www.opencompute.org/members/nebius-ai/
+    matched_domain: nebius.com
+    matched_by: domain
+    listings: 2
+    recognised_listings: 1
+    products_sample:
+    - Nebius 2OU OCP Inspired™ Scalable Server
+    signal_note: certified_products = one entry per product type (OCP recognition + most specific marketplace segment)
+      among OCP-recognised listings; unrecognised listings are listing alone (participation). The REST data marks
+      no listing archived, so lapsed is false. Listing counts are context, never counted
+    detected_by: sweep-semiconductor-consortia.py
+    detected: '2026-10-21'
+    certified_products:
+    - product: 'OCP Accepted: Dual-Socket Servers'
+      recognition: OCP Accepted
+      product_type: Dual-Socket Servers
+      lapsed: false
+      listings: 1
+      newest_listing: '2025-02-05'
+  detected_by: sweep-semiconductor-consortia.py
+  first_seen: '2026-10-21'
+  partner_tier: OCP Accepted
 generated: '2026-10-13'
 method: searched
 checked:
@@ -431,6 +494,17 @@ checked:
 - https://skillsmp.com/sitemap.xml
 - https://www.skills.sh/sitemap.xml
 - terraform/integrations/terraform-integration-edges.yml
+- https://uptimeinstitute.com/uptime-institute-awards/list
+- https://www.climateneutraldatacentre.net/signatories/
+- https://www.opencompute.org/membership/membership-directory
+- https://www.thegreengrid.org/en/about-us/members
+- https://riscv.landscape2.io/data/full.json
+- https://riscv.org/members/
+- https://www.nist.gov/chips/chips-program-office-awards
+- https://www.nist.gov/chips/chips-rd-office-awards
+- https://www.opencompute.org/products
+- https://www.opencompute.org/wp-json/wp/v2/companies
+- https://www.opencompute.org/wp-json/wp/v2/marketplace
 source:
 - https://github.com/cncf/landscape
 - https://github.com/cncf/k8s-conformance
