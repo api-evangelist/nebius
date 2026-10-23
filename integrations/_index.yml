@@ -281,19 +281,6 @@
     detected: '2026-10-20'
   status: not-a-workflow
   arazzo: null
-- slug: nebius-terraform-terraform-registry
-  label: Terraform (terraform-registry)
-  partner: terraform
-  partner_name: Terraform (terraform-registry)
-  category: infrastructure-as-code provider registry listing
-  type: marketplace
-  marketplace: terraform-registry
-  channel: partner-built
-  evidence: https://registry.terraform.io/providers/nebius/nebius
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: nebius-open-compute-project-foundation
   label: Open Compute Project Foundation
   partner_name: Open Compute Project Foundation
@@ -353,5 +340,31 @@
       lapsed: false
       listings: 1
       newest_listing: '2025-02-05'
+  status: not-a-workflow
+  arazzo: null
+- slug: nebius-terraform-terraform-registry
+  label: Terraform (terraform-registry)
+  partner: terraform
+  partner_name: Terraform (terraform-registry)
+  category: infrastructure-as-code provider registry listing
+  type: marketplace
+  marketplace: terraform-registry
+  channel: partner-built
+  evidence: https://registry.terraform.io/providers/nebius/nebius
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: nebius-hugging-face-hugging-face-hub
+  label: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_name: Hugging Face (hugging-face-hub)
+  category: Hugging Face Hub datasets
+  type: marketplace
+  marketplace: hugging-face-hub
+  channel: partner-built
+  evidence: https://huggingface.co/nebius
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null

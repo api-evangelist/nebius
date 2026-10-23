@@ -386,25 +386,6 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-agent-skills.py
   first_seen: '2026-10-20'
-- partner_name: Terraform (terraform-registry)
-  partner: terraform
-  partner_match: mirror
-  mirror_match: register
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: terraform-registry
-  evidence: https://registry.terraform.io/providers/nebius/nebius
-  mirror_of: terraform/integrations/terraform-integration-edges.yml
-  apps:
-  - nebius/nebius
-  listing_count: 1
-  detected: '2026-10-21'
-  detected_by: mirror-platform-listings.py
-  category: infrastructure-as-code provider registry listing
-  badges:
-  - Verified publisher (GitHub domain-verified organization)
 - partner_name: Open Compute Project Foundation
   partner: null
   partner_match: register
@@ -468,6 +449,60 @@ edges:
   detected_by: sweep-semiconductor-consortia.py
   first_seen: '2026-10-21'
   partner_tier: OCP Accepted
+- partner_name: Terraform (terraform-registry)
+  partner: terraform
+  partner_match: mirror
+  mirror_match: register
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: terraform-registry
+  evidence: https://registry.terraform.io/providers/nebius/nebius
+  mirror_of: terraform/integrations/terraform-integration-edges.yml
+  apps:
+  - nebius/nebius
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: infrastructure-as-code provider registry listing
+  badges:
+  - Verified publisher (GitHub domain-verified organization)
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/nebius
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - nebius/SWE-rebench-V2
+  - nebius/SWE-rebench
+  - nebius/SWE-bench-extra
+  - nebius/SWE-rebench-V2-PRs
+  - nebius/SWE-agent-trajectories
+  - nebius/SWE-rebench-openhands-trajectories
+  - nebius/SWE-rebench-leaderboard
+  - nebius/DeepSeek-V3-Infinity-Instruct-0625
+  - nebius/EAGLE3-Llama-3.3-70B-Instruct
+  - nebius/EAGLE3-gpt-oss-20b
+  - nebius/EAGLE3-Llama-3.1-8B-Instruct
+  - nebius/EAGLE3-Qwen3-235B-A22B-Instruct-2507
+  - nebius/EAGLE3-gpt-oss-120b
+  - nebius/SWE-rebench-openhands-Qwen3-30B-A3B
+  - nebius/MTP-DeepSeek-V3-0324
+  - nebius/MEDUSA-Llama-3.1-8B-Instruct
+  - nebius
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 generated: '2026-10-13'
 method: searched
 checked:
@@ -505,6 +540,7 @@ checked:
 - https://www.opencompute.org/products
 - https://www.opencompute.org/wp-json/wp/v2/companies
 - https://www.opencompute.org/wp-json/wp/v2/marketplace
+- hugging-face/integrations/hugging-face-integration-edges.yml
 source:
 - https://github.com/cncf/landscape
 - https://github.com/cncf/k8s-conformance
